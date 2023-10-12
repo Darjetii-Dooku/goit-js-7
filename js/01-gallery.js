@@ -34,6 +34,7 @@ function handlerClick(evt) {
     function handlerKey(evt){
         if (evt.code === 'Escape') {
             instance.close();
+            evt.currentTarget.removeEventListener("keydown", handlerKey);
         }
     };
     
